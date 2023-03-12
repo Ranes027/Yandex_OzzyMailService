@@ -30,7 +30,7 @@ namespace OzzyMailService.Components.Collectibles
             Progress.Instance.PlayerInfo.Collectibles = NumberOfCollectibles;
         }
 
-        public void SpendMoney(int value)
+        public void SpendCollectibles(int value)
         {
             NumberOfCollectibles -= value;
             _valueText.text = NumberOfCollectibles.ToString();
