@@ -41,5 +41,13 @@ namespace OzzyMailService.Data
                 SceneManager.LoadScene(nextLevel);
             }
         }
+
+        public void ToMainMenu()
+        {
+            _collectibleManager.SaveToProgress();
+            Progress.Instance.PlayerInfo.Level = SceneManager.GetActiveScene().buildIndex;
+            Progress.Instance.Save();
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }
