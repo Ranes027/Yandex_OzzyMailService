@@ -9,7 +9,7 @@ namespace OzzyMailService.Components.Environment
     {
         [SerializeField] int _barrierDamage;
 
-        [SerializeField] GameObject _bricksEffectPrefab;
+        [SerializeField] GameObject _breakEffectPrefab;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -20,7 +20,7 @@ namespace OzzyMailService.Components.Environment
                 playerModifier.HitBarrier(_barrierDamage);
                 Destroy(gameObject);
 
-                Instantiate(_bricksEffectPrefab, transform.position, transform.rotation);
+                Instantiate(_breakEffectPrefab, transform.position, transform.rotation);
             }
         }
     }
