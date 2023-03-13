@@ -61,6 +61,7 @@ namespace OzzyMailService.Player
             if (_height > 0)
             {
                 _height -= value;
+                UpdateHeight();
             }
             else if (_width > 0)
             {
