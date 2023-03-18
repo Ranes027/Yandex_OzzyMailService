@@ -74,6 +74,14 @@ namespace OzzyMailService.Player
             }
         }
 
+        public void HitLimiter(int value)
+        {
+            if (_height > value)
+            {
+                SetHeight(value);
+            }
+        }
+
         private void Die()
         {
             Destroy(gameObject);
