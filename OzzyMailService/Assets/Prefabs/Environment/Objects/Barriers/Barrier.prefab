@@ -110,6 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c907d2a2c81d74a994302c447289b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _barrierDamage: 20
+  _barrierDamage: 40
   _breakEffectPrefab: {fileID: 3318512539779167166, guid: 378b48e1ee0292442b95c65b801eb0b5,
     type: 3}
