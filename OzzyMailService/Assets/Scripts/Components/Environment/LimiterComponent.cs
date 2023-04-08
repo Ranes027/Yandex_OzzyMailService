@@ -9,11 +9,11 @@ namespace OzzyMailService.Components.Environment
     {
         [SerializeField] private LimiterAppearence _limiterAppearence;
 
-        [SerializeField] private int _limitHeight;
+        [SerializeField] private Limiters _limitHeight;
 
         private void OnValidate()
         {
-            _limiterAppearence.UpdateVisual(_limitHeight);
+            _limiterAppearence.UpdateVisual((int)_limitHeight);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -22,9 +22,16 @@ namespace OzzyMailService.Components.Environment
 
             if (playerModifier != null)
             {
-                playerModifier.HitLimiter(_limitHeight);
+                playerModifier.HitLimiter((int)_limitHeight);
             }
         }
+    }
+
+    public enum Limiters
+    {
+        Limiter50 = 50,
+        Limiter75 = 75,
+        Limiter100 = 100
     }
 
 }
