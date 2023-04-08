@@ -24,10 +24,10 @@ namespace OzzyMailService.Components.Environment
                     _limiter50.SetActive(true);
                     break;
                 case 75:
-                    _limiter50.SetActive(true);
+                    _limiter75.SetActive(true);
                     break;
                 case 100:
-                     _limiter50.SetActive(true);
+                     _limiter100.SetActive(true);
                     break;
                 default:
                     break;
